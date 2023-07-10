@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        .back-img {
+            background-image: url(./t-soup.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size:cover;
+            position:fixed;
+        }
+        .card-faq{
+            text-decoration:rgb(21, 244, 244);
+        }
+
+        .text {
+            text-align: justify;
+            color: rgb(11, 17, 12);
+            font-weight: bold;
+            font-family: 'Bree Serif', serif;
+            font-size:150%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="back-img">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Foodie</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/FAQs.html">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Deshes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Veg</a></li>
+                                <li><a class="dropdown-item" href="#">Non-Veg</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Drinks</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="text">
+
+            <div class="inner-banner faqpage">
+
+                <div class="page-info">
+                    <div class="container">
+                        <div class="faqbanner-caption">
+                            <h1>FAQs </h1>
+                            <div class="faqbox">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <!-- <ul class="nav nav-tabs">
+                                        <li><a class="active" data-toggle="tab" href="home1" role="tab"
+                                                aria-controls="home1" aria-selected="true">
+                                                Who are Life Food?</a></li>
+                                        <li><a class="" data-toggle="tab" href="home2" role="tab" aria-controls="home2"
+                                                aria-selected="true">
+                                                How Does It Work?</a></li>
+                                                <li><a class="" data-toggle="tab" href="home3" role="tab" aria-controls="home3"
+                                                aria-selected="true">
+                                                Whats on the Menu?</a></li>
+                                                <li><a class="" data-toggle="tab" href="home4" role="tab" aria-controls="home4"
+                                                    aria-selected="true">
+                                                    How Much Does It Cost?</a></li>
+                                                    <li><a class="" data-toggle="tab" href="home5" role="tab" aria-controls="home5"
+                                                aria-selected="true">
+                                                How Do The Deliveries Work?</a></li>
+                                        <li><a class="" data-toggle="tab" href="home6" role="tab" aria-controls="home6"
+                                            aria-selected="true">
+                                                How Long Do Your Meals Last?</a></li>
+                                        <li><a class="" data-toggle="tab" href="home7" role="tab" aria-controls="home7"
+                                            aria-selected="true">
+                                                How Do I Heat My Meals?</a></li>
+                                    </ul> -->
+
+
+                                        <!-- <div class="tab-content">
+                                        <div id="home1" class="tab-pane fade in in active show">
+                                            <p>Life Food are a prep meal company like no other. We realized that there
+                                                was a
+                                                huge gap in the market for a meal prep company that was not only
+                                                affordable
+                                                but truly bespoke.</p>
+                                            <p>We aren’t here to skimp on portions or make a huge mark-up whilst our
+                                                customers go hungry. Our meals will leave you feeling full and fuelled,
+                                                ready to take on everything life has to throw at you.</p>
+                                                <p>Bringing quality at a fantastic price, using fresh ingredients and
+                                                locally
+                                                sourced meat, we are sure you will love our meals.</p>
+                                            </div>
+                                            <div id="home2" class="tab-pane fade in ">
+                                            <p>Simply select your combination from our mouth-watering menu, indicate
+                                                what
+                                                weights you would like* to suit your macros and let our chefs take care
+                                                of
+                                                the rest for you. It really is that simple!</p>
+                                            </div>
+                                        <div id="home3" class="tab-pane fade in ">
+                                            <p>You can see our full menu by clicking <a
+                                                    href="https://www.life-food.co.uk/life-food-prep-menu/">here</a></p>
+                                        </div>
+                                        <div id="home4" class="tab-pane fade in ">
+                                            <p>The price per meal depends on the weights you select. Our Muscle Gain
+                                                meals
+                                                (200g of Protein Source, 200g of Carbohydrate Source and 30g of
+                                                Vegetables)
+                                                cost just £7.50 per meal. Plus, we won’t charge you for delivery… that’s
+                                                on
+                                                us*.</p>
+                                                <p>*Extra delivery charges will apply for any orders placed for weekend
+                                                    delivery.</p>
+                                                </div>
+                                                <div id="home5" class="tab-pane fade in ">
+                                            <p>We will typically have your meals to you in 48 hours from you ordering,
+                                                if
+                                                ordering before 2pm, for example:</p>
+                                                <ul>
+                                                    <li>Orders placed Monday will arrive Wednesday.</li>
+                                                    <li>Orders placed Tuesday will arrive Thursday.</li>
+                                                <li>Orders placed Wednesday will arrive Friday.</li>
+                                                <li>Orders placed Thursday will arrive the following Tuesday.</li>
+                                            </ul>
+                                            <p>So Orders placed Monday to Wednesday, will arrive 48 hours later. Any
+                                                orders
+                                                Thursday onwards will be dispatched for the following week.</p>
+                                            <p>We use DPD as our delivery company and they will deliver nationwide for
+                                                us.
+                                                Your meals will be sealed in temperature-controlled packaging to keep it
+                                                cool and protected all day. Then DPD will give you a one-hour time slot
+                                                for
+                                                your delivery the morning / afternoon of delivery. If you’re not going
+                                                to be
+                                                home, you’ll be able to let them know if they need to leave with a
+                                                neighbour
+                                                or in a safe place.</p>
+                                        </div>
+                                        <div id="home6" class="tab-pane fade in ">
+                                            <p>Our meals will stay fresh in the fridge for 3 days. If you wanted to
+                                                freeze
+                                                your meals, we recommend you do so for no longer than 28 days. We also
+                                                recommend that you de-frost before re-heating… as no one likes frozen
+                                                broccoli!</p>
+                                            </div>
+                                            <div id="home7" class="tab-pane fade in ">
+                                                <p>All of our meals are packed into microwavable containers (which you can
+                                                    wash,
+                                                    and re-use should you wish) and we recommend between 3-4 minutes in a
+                                                conventional microwave oven.</p>
+                                            </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> -->
+
+                                        <div class="faqbox-mobile">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="accordion lg-accordion" id="accordionEx" role="tablist"
+                                                        aria-multiselectable="true">
+                                                        <div class="card-faq">
+                                                            <div class="card-header-faq active" role="tab"
+                                                                id="heading_1">
+                                                                <a data-toggle="collapse" data-parent="#accordionEx"
+                                                                    href="#collapse_1" aria-expanded="true"
+                                                                    aria-controls="collapse_1">Who are Life
+                                                                    Food?</a>
+                                                            </div>
+                                                            <div id="collapse_1" class="collapse show" role="tabpanel"
+                                                                aria-labelledby="heading_1" data-parent="#accordionEx">
+                                                                <div class="card-body-faq">
+                                                                    <p>Life Food are a prep meal company like no other.
+                                                                        We realized that
+                                                                        there was a huge gap in the market for a meal
+                                                                        prep company that
+                                                                        was
+                                                                        not only affordable but truly bespoke.</p>
+                                                                    <p>We aren’t here to skimp on portions or make a
+                                                                        huge mark-up whilst
+                                                                        our
+                                                                        customers go hungry. Our meals will leave you
+                                                                        feeling full and
+                                                                        fuelled, ready to take on everything life has to
+                                                                        throw at you.
+                                                                    </p>
+                                                                    <p>Bringing quality at a fantastic price, using
+                                                                        fresh ingredients
+                                                                        and
+                                                                        locally sourced meat, we are sure you will love
+                                                                        our meals.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-faq">
+                                                            <div class="card-header-faq active " role="tab" id="heading_2">
+                                                                <a data-toggle="collapse" data-parent="#accordionEx"
+                                                                    href="#collapse_2" aria-expanded="true"
+                                                                    aria-controls="collapse_2">How Does It
+                                                                    Work?</a>
+                                                            </div>
+                                                            <div id="collapse_2" class="collapse " role="tabpanel"
+                                                                aria-labelledby="heading_2" data-parent="#accordionEx">
+                                                                <div class="card-body-faq">
+                                                                    <p>Simply select your combination from our
+                                                                        mouth-watering menu,
+                                                                        indicate
+                                                                        what weights you would like* to suit your macros
+                                                                        and let our
+                                                                        chefs
+                                                                        take care of the rest for you. It really is that
+                                                                        simple!</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-faq">
+                                                            <div class="card-header-faq " role="tab" id="heading_3">
+                                                                <a data-toggle="collapse" data-parent="#accordionEx"
+                                                                    href="#collapse_3" aria-expanded="true"
+                                                                    aria-controls="collapse_3">Whats on the
+                                                                    Menu?</a>
+                                                            </div>
+                                                            <div id="collapse_3" class="collapse " role="tabpanel"
+                                                                aria-labelledby="heading_3" data-parent="#accordionEx">
+                                                                <div class="card-body-faq">
+                                                                    <p>You can see our full menu by clicking <a
+                                                                            href="https://www.life-food.co.uk/life-food-prep-menu/">here</a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-faq">
+                                                            <div class="card-header-faq " role="tab" id="heading_4">
+                                                                <a data-toggle="collapse" data-parent="#accordionEx"
+                                                                    href="#collapse_4" aria-expanded="true"
+                                                                    aria-controls="collapse_4">How Much Does It
+                                                                    Cost?</a>
+                                                            </div>
+                                                            <div id="collapse_4" class="collapse " role="tabpanel"
+                                                                aria-labelledby="heading_4" data-parent="#accordionEx">
+                                                                <div class="card-body-faq">
+                                                                    <p>The price per meal depends on the weights you
+                                                                        select. Our Muscle
+                                                                        Gain
+                                                                        meals (200g of Protein Source, 200g of
+                                                                        Carbohydrate Source and
+                                                                        30g
+                                                                        of Vegetables) cost just £7.50 per meal. Plus,
+                                                                        we won’t charge
+                                                                        you
+                                                                        for delivery… that’s on us*.</p>
+                                                                    <p>*Extra delivery charges will apply for any orders
+                                                                        placed for
+                                                                        weekend
+                                                                        delivery.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-faq">
+                                                            <div class="card-header-faq " role="tab" id="heading_5">
+                                                                <a data-toggle="collapse" data-parent="#accordionEx"
+                                                                    href="#collapse_5" aria-expanded="true"
+                                                                    aria-controls="collapse_5">How Do The
+                                                                    Deliveries
+                                                                    Work?</a>
+                                                            </div>
+                                                            <div id="collapse_5" class="collapse " role="tabpanel"
+                                                                aria-labelledby="heading_5" data-parent="#accordionEx">
+                                                                <div class="card-body-faq">
+                                                                    <p>We will typically have your meals to you in 48
+                                                                        hours from you
+                                                                        ordering, if ordering before 2pm, for example:
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li>Orders placed Monday will arrive Wednesday.
+                                                                        </li>
+                                                                        <li>Orders placed Tuesday will arrive Thursday.
+                                                                        </li>
+                                                                        <li>Orders placed Wednesday will arrive Friday.
+                                                                        </li>
+                                                                        <li>Orders placed Thursday will arrive the
+                                                                            following Tuesday.
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p>So Orders placed Monday to Wednesday, will arrive
+                                                                        48 hours later.
+                                                                        Any
+                                                                        orders Thursday onwards will be dispatched for
+                                                                        the following
+                                                                        week.
+                                                                    </p>
+                                                                    <p>We use DPD as our delivery company and they will
+                                                                        deliver
+                                                                        nationwide
+                                                                        for us. Your meals will be sealed in
+                                                                        temperature-controlled
+                                                                        packaging to keep it cool and protected all day.
+                                                                        Then DPD will
+                                                                        give
+                                                                        you a one-hour time slot for your delivery the
+                                                                        morning /
+                                                                        afternoon
+                                                                        of delivery. If you’re not going to be home,
+                                                                        you’ll be able to
+                                                                        let
+                                                                        them know if they need to leave with a neighbour
+                                                                        or in a safe
+                                                                        place.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-faq">
+                                                            <div class="card-header-faq " role="tab" id="heading_6">
+                                                                <a data-toggle="collapse" data-parent="#accordionEx"
+                                                                    href="#collapse_6" aria-expanded="true"
+                                                                    aria-controls="collapse_6">How Long Do Your
+                                                                    Meals
+                                                                    Last?</a>
+                                                            </div>
+                                                            <div id="collapse_6" class="collapse " role="tabpanel"
+                                                                aria-labelledby="heading_6" data-parent="#accordionEx">
+                                                                <div class="card-body-faq">
+                                                                    <p>Our meals will stay fresh in the fridge for 3
+                                                                        days. If you wanted
+                                                                        to
+                                                                        freeze your meals, we recommend you do so for no
+                                                                        longer than 28
+                                                                        days. We also recommend that you de-frost before
+                                                                        re-heating… as
+                                                                        no
+                                                                        one likes frozen broccoli!</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-faq">
+                                                            <div class="card-header-faq " role="tab" id="heading_7">
+                                                                <a data-toggle="collapse" data-parent="#accordionEx"
+                                                                    href="#collapse_7" aria-expanded="true"
+                                                                    aria-controls="collapse_7">How Do I Heat My
+                                                                    Meals?</a>
+                                                            </div>
+                                                            <div id="collapse_7" class="collapse " role="tabpanel"
+                                                                aria-labelledby="heading_7" data-parent="#accordionEx">
+                                                                <div class="card-body-faq">
+                                                                    <p>All of our meals are packed into microwavable
+                                                                        containers (which
+                                                                        you
+                                                                        can wash, and re-use should you wish) and we
+                                                                        recommend between
+                                                                        3-4
+                                                                        minutes in a conventional microwave oven.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                   
+                </div>
+
+
+
+
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+                    crossorigin="anonymous"></script>
+</body>
+
+
+</html>
